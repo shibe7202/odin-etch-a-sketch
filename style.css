@@ -6,23 +6,32 @@
 
 html, body {
     display: flex;
+    flex-direction: column;
     height: 100%;
     min-height: 100%;
     align-items: center;
     justify-content: center;
 }
 
+button {
+    margin: 16px;
+    margin-top: 32px;
+    font-size: 20px;
+}
+
 #container {
     display: flex;
-    width: 740px;
+    min-height: 800px;
+    width: 800px;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: stretch;
 }
 
 .squares {
     background-color: skyblue;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border: black solid;
+    box-sizing: border-box;
 }
